@@ -27,16 +27,18 @@ apiCall();
 
 //Grabbed html elements
 const quoteDisplay = document.getElementById('quoteDisplay');
+const quoteDisplayTwo = document.querySelector('#quote-display-two');
+const quoteDisplayThree = document.querySelector('#quote-display-three');
 const quoteButton = document.querySelector('#quoteButton');
-quoteButton.addEventListener('click', newQuote);
+quoteButton.addEventListener('click', newPhrase);
 const div = document.querySelector('.two');
 
 var quotesArray = [
-/*0*/'Cuando digo que te amo, digo que en ti reconozco algo que siento en mí también y que ver el mundo contigo me hace más feliz. Cuando nos cueste, recuerda que contigo yo lo voy a querer seguir intentando siempre, y cuando nos salga muy simple, no olvides que fue porque no nos rendimos antes... porque la magia está en el intento. Gracias por ser real para mí <3 :)'];
+/*0*/'Cuando digo que te amo, digo que en ti reconozco algo que siento en mí también, y que lo únicamente tuyo no me asusta, solo me enamora más. Cuando digo que te amo, digo que hasta en los peores días, ver el mundo contigo me hace más feliz.', 'Cuando nos cueste, recuerda que "intentarlo una vez más" nunca va a ser demasiado, y cuando nos salga fácil, no olvides que fue porque no nos rendimos antes... porque la magia está en el intento. Gracias por ser real para mí <3 :)...', 'Te amo, siempre.'];
 
 
 
-function newQuote() {
+/*function newQuote() {
   /*this is to show random quotes in case I want to later.
   let quoteNumb = Math.floor(Math.random() * 3);
   quoteDisplay.textContent = quotes[quoteNumb];*/
@@ -45,16 +47,16 @@ function newQuote() {
     quoteSelection(quotesArray);
   } else {
     videoSelection(videoArray);
-  }*/
+  }
   quoteSelection();
   
   
-}
+}*/
 
 
 
 //create video element
-var video = document.createElement('video');
+/*var video = document.createElement('video');
 video.setAttribute('width', '100%');
 video.setAttribute('height', 'auto');
 video.controls = true;
@@ -62,33 +64,35 @@ video.controls = true;
 var sourceMP4 = document.createElement('source');
 sourceMP4.type = "video/mp4";
 sourceMP4.src = "para_jacque.mp4";
-video.appendChild(sourceMP4);
-
+video.appendChild(sourceMP4);*/
+/*var paragraphDiv = document.querySelector('.phrase-button-container');
+var paragraphButton = document.createElement('button');
+paragraphButton.classList.add('btn', 'btn-warning');
+paragraphButton.textContent = "Házme clic después de ver el video";
+paragraphDiv.appendChild(paragraphButton);
+paragraphButton.addEventListener('click', newPhrase);*/
 
 
 function newPhrase(array_to_read) {
   array_to_read = quotesArray;
   quoteDisplay.textContent = array_to_read[0];
+  quoteDisplayTwo.textContent = array_to_read[1];
+  quoteDisplayThree.textContent = array_to_read[2];
 }
 
 
 //conditional logic
-function quoteSelection(quote) {
+/*function quoteSelection(quote) {
   
   
   //formatting - currentDate "2019-08-12" currentTime "13:38"
   switch (true) {
     /*case "2019-8-12" || "2019-08-12":
     quoteDisplay.textContent = quotes[0];
-    break;*/
+    break;
     case currentTime >= "22:00":
-    visualization.appendChild(video);
-    var paragraphDiv = document.querySelector('.phrase-button-container');
-    var paragraphButton = document.createElement('button');
-    paragraphButton.classList.add('btn', 'btn-warning');
-    paragraphButton.textContent = "Házme clic después de ver el video";
-    paragraphDiv.appendChild(paragraphButton);
-    paragraphButton.addEventListener('click', newPhrase);
+    visualization.appendChild(video);*/
+    
     
     /*break;
     case "2019-08-14":
@@ -158,7 +162,7 @@ function quoteSelection(quote) {
     case "2019-08-04" || "2019-08-4":
     quoteDisplay.textContent = quotes[22];
     break;*/
-  }
+
   
   //Code by Keny Zachelin (I just borrowed it because it's got a nice look)
   var text = quoteDisplay;
@@ -176,7 +180,7 @@ function quoteSelection(quote) {
     for (let i = 0; i < length; i++) {
       text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
     }
-  }
+  
 
 
 /////////////////////////////////////

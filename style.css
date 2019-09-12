@@ -1,6 +1,4 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -9,16 +7,16 @@ html {
 }
 
 body {
+  padding-top: 10rem;
   background: #2C3E50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgb(9, 156, 53), #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, rgb(9, 156, 53), #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
  
 }
 
 
 #visualization {
-  margin-top: 20rem;
   max-width: 30rem;
   height: 15rem;
   margin: auto;
@@ -52,8 +50,9 @@ video {
 }
 
 .output {
-  margin-bottom: 5rem;
-  font-family: font-family: 'Gayathri', sans-serif;
+  margin: auto;
+  font-family: 'Gayathri', sans-serif;
+  max-width: 30rem;
 }
 
 /*////////////Code by Keny Zachelin (text animation)///////////*/
