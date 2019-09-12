@@ -34,7 +34,7 @@ quoteButton.addEventListener('click', newPhrase);
 const div = document.querySelector('.two');
 
 var quotesArray = [
-/*0*/'Cuando digo que te amo, digo que en ti reconozco algo que siento en mí también, y que lo únicamente tuyo no me asusta, solo me enamora más. Cuando digo que te amo, digo que hasta en los peores días, ver el mundo contigo me hace más feliz.', 'Cuando nos cueste, recuerda que "intentarlo una vez más" nunca va a ser demasiado, y cuando nos salga fácil, no olvides que fue porque no nos rendimos antes... porque la magia está en el intento. Gracias por ser real para mí <3 :)...', 'Te amo, siempre.'];
+/*0*/'Cuando digo que te amo, digo que en ti reconozco algo que siento en mí también, y que lo únicamente tuyo no me asusta, solo me enamora más. Cuando digo que te amo, digo que quiero ser tu compañera en todo y que hasta en los peores días, ver el mundo contigo me hace más feliz.', 'Cuando nos cueste, recuerda que "intentarlo una vez más" nunca va a ser demasiado, y cuando nos salga fácil, no olvides que fue porque no nos rendimos antes... porque la magia está en el intento. Gracias por ser real para mí <3 :)...', 'Te amo, siempre.'];
 
 
 
